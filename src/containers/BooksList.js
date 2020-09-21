@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import uuid from 'react-uuid';
 import Book from '../components/Book';
 
 const BookList = ({ books }) => {
@@ -10,9 +11,8 @@ const BookList = ({ books }) => {
       <table>
         <thead>
           {
-         rowHead.map((heading, index) => (
-           // eslint-disable-next-line react/no-array-index-key
-           <th key={index}>{heading}</th>
+         rowHead.map(heading => (
+           <th key={uuid()}>{heading}</th>
          ))
 }
         </thead>
@@ -29,8 +29,7 @@ const BookList = ({ books }) => {
 };
 
 BookList.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  books: PropTypes.array.isRequired,
+  books: PropTypes.shape.isRequired,
 };
 
 const mapStateToProps = state => ({
