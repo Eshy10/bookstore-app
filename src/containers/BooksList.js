@@ -1,12 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
-const book = {
-  id: 1,
-  title: 'Title',
-  category: 'Category',
-};
-const BookList = () => {
+const BookList = ({ books }) => {
   const rowHead = ['ID', 'Title', 'Category'];
   return (
     <div>
@@ -20,11 +17,24 @@ const BookList = () => {
 }
         </thead>
         <tbody>
-          <Book book={book} />
+          {
+          books.map(book => (
+            <Book key={book.id} book={book} />
+          ))
+        }
         </tbody>
       </table>
     </div>
   );
 };
 
-export default BookList;
+BookList.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  books: PropTypes.array.isRequired,
+};
+
+const mapStateToProps = state => ({
+  books: state.books,
+});
+
+export default connect(mapStateToProps)(BookList);
