@@ -30,6 +30,7 @@
     ],
     "import/no-unresolved": "off",
     "no-shadow": "off",
+    "linebreak-style": 0,
     "arrow-parens": [
       "error",
       "as-needed"
