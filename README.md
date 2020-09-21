@@ -1,68 +1,78 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Shabab-Click%20to%20Contact-brightgreen)](mailto:shababsaifi@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/shabab_ali?label=Follow%20Shabab%20on%20Twitter&style=social)](https://twitter.com/shabab_ali)
 
-## Available Scripts
+[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Adwele-Click%20to%20Contact-brightgreen)](mailto:adewalebose15@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/AdesholaAdewal6?label=Follow%20Adwele%20on%20Twitter&style=social)](https://twitter.com/AdesholaAdewal6)
 
-In the project directory, you can run:
+# Bookstore App
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- HTML
+- CSS
+- JavaScript
+- WebPack
+- React
+- Redux
+- Heroku
+- NodeJS
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Live Demo
 
-### `npm test`
+[Click here](https://react-magic-bookstore.herokuapp.com/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get a local copy up and running follow these steps:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Basic knowledge of Html, CSS and JavaScript
+- A Code Editor
+- Git
+- node.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Usage
 
-### `npm run eject`
+- Fork/Clone this project to your local machine
+- Run `npm install` to install node dependencies
+- Run `npm start` to start development server
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Authors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+👤 **Shabab Ali**
 
-## Learn More
+- Github: [@alishabab](https://github.com/alishabab)
+- Twitter: [@shabab_ali](https://twitter.com/shabab_ali)
+- LinkedIn: [shababali](https://www.linkedin.com/in/shababali/)
+- Email: [shababsaifi@gmail.com](mailto:shababsaifi@gmail.com)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Adewele Modupe**
 
-### Code Splitting
+- Github: [@Eshy10](https://github.com/Eshy10)
+- Twitter: [@AdesholaAdewal6](https://twitter.com/AdesholaAdewal6)
+- LinkedIn: [adewale-adeshola](https://www.linkedin.com/in/adewale-adeshola/)
+- Email: [adewalebose15@gmail.com](mailto:adewalebose15@gmail.com)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions and feature requests are welcome!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Start by:
 
-### Making a Progressive Web App
+- Forking the project
+- Cloning the project to your local machine
+- `cd` into the project directory
+- Run `git checkout -b your-branch-name`
+- Make your contributions
+- Push your branch up to your forked repository
+- Open a Pull Request with a detailed description to the development(or master if not available) branch of the original project for a review
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Show your support
 
-### Advanced Configuration
+Give a ⭐️ if you like this project!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Acknowledgments
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Microverse](https://microverse.org)
