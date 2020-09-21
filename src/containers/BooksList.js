@@ -10,11 +10,13 @@ const BookList = ({ books }) => {
     <div>
       <table>
         <thead>
-          {
+          <tr>
+            {
          rowHead.map(heading => (
            <th key={uuid()}>{heading}</th>
          ))
 }
+          </tr>
         </thead>
         <tbody>
           {
@@ -29,7 +31,7 @@ const BookList = ({ books }) => {
 };
 
 BookList.propTypes = {
-  books: PropTypes.shape.isRequired,
+  books: PropTypes.instanceOf(Array).isRequired,
 };
 
 const mapStateToProps = state => ({
