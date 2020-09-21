@@ -1,6 +1,11 @@
 import React from 'react';
 import Book from '../components/Book';
 
+const book = {
+  id: 1,
+  title: 'Title',
+  category: 'Category',
+};
 const BookList = () => {
   const rowHead = ['ID', 'Title', 'Category'];
   return (
@@ -15,7 +20,7 @@ const BookList = () => {
 }
         </thead>
         <tbody>
-          <Book />
+          <Book book={book} />
         </tbody>
       </table>
     </div>
