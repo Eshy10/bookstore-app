@@ -10,7 +10,7 @@ const initialState = {
   books: [
     {
       id: Math.floor(Math.random() * 10),
-      title: 'Vine',
+      title: 'The Vine',
       category: 'Horror',
     },
     {

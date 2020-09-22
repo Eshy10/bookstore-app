@@ -16,7 +16,7 @@ const NavBar = () => (
           BOOKS
         </a>
       </li>
-      <li>
+      <li className="nav_category">
         <a>
           CATEGORIES
         </a>

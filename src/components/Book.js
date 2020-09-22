@@ -2,11 +2,39 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = ({ book, handleRemoveBook }) => (
-  <tr>
-    <td>{book.id}</td>
-    <td>{book.title}</td>
-    <td>{book.category}</td>
-    <td><button type="button" onClick={() => handleRemoveBook(book)}>Remove</button></td>
+  <tr className="table_row">
+    <div className="book_details">
+      <div className="table-book-info">
+        <td className="table-book-category">{book.category}</td>
+        <td className="table-book-title">{book.title}</td>
+        <td className="table-book-id">
+          ID:
+          {' '}
+          {book.id}
+        </td>
+      </div>
+      <div className="table-book-options">
+        <span>Comments</span>
+        <span className="span-element">|</span>
+        <td className="span-element"><button type="button" onClick={() => handleRemoveBook(book)}>Remove</button></td>
+        <span className="span-element">|</span>
+        <span className="span-element">Edit</span>
+      </div>
+    </div>
+    <div className="books_completed">
+      {/* <RadioButtonUncheckedIcon className="Oval-2" /> */}
+      <div className="Oval-2" />
+      <div className="percentage">
+        <span>94%</span>
+        <span>Completed</span>
+      </div>
+    </div>
+    <span className="line" />
+    <div className="book-progress">
+      <span className="book-progress-chapter">CURRENT CHAPTER</span>
+      <span className="book-progress-title">Chapter 13</span>
+      <button type="button" className="book-progress-button">UPDATE PROGRESS</button>
+    </div>
   </tr>
 );
 
