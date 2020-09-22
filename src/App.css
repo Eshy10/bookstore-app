@@ -205,3 +205,49 @@ color: #4386bf;
   letter-spacing: .5px;
   font-family: "Roboto Slab",serif;
 }
+
+.form_element {
+  padding-left: 9em;
+  padding-right: 2em;
+  padding-bottom: .5em;
+}
+
+.form_title {
+  font-family: "Montserrat",sans-serif;
+    color: #888;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+   margin-left: 4rem;
+   text-transform: uppercase;
+}
+
+
+.form_input {
+  width: 500px;
+  height: 45px;
+  border: none;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+}
+
+.form_category{
+    width: 285px;
+    height: 45px;
+    margin-left: .5em;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #ffffff;
+}
+
+.form_button {
+  width: 184px;
+  height: 45px;
+  margin-left: 1em;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
