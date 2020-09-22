@@ -4,7 +4,12 @@ import PropTypes from 'prop-types';
 import uuid from 'react-uuid';
 import Book from '../components/Book';
 
-const BookList = ({ books }) => {
+import { removeBook } from '../actions/index';
+
+const BookList = ({ books, removeBook }) => {
+  const handleRemoveBook = book => {
+    removeBook(book);
+  };
   const rowHead = ['ID', 'Title', 'Category'];
   return (
     <div>
@@ -21,7 +26,7 @@ const BookList = ({ books }) => {
         <tbody>
           {
           books.map(book => (
-            <Book key={book.id} book={book} />
+            <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />
           ))
         }
         </tbody>
@@ -32,10 +37,17 @@ const BookList = ({ books }) => {
 
 BookList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
   books: state.books,
 });
 
-export default connect(mapStateToProps)(BookList);
+const mapDispatchToProps = dispatch => ({
+  removeBook: book => {
+    dispatch(removeBook(book));
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(BookList);
