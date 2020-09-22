@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const CategoryFilter = () => {
+const CategoryFilter = ({ handleFilterChange }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
-    <select name="category">
+    <select onChange={handleFilterChange} name="category">
       <option value="All">
         All
       </option>
@@ -14,6 +15,10 @@ const CategoryFilter = () => {
       ))}
     </select>
   );
+};
+
+CategoryFilter.propTypes = {
+  handleFilterChange: PropTypes.func.isRequired,
 };
 
 export default CategoryFilter;
