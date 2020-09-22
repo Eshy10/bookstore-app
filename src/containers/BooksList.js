@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import uuid from 'react-uuid';
 import Book from '../components/Book';
+import CategoryFilter from '../components/CategoryFilter';
 
 import { removeBook } from '../actions/index';
 
@@ -13,6 +14,7 @@ const BookList = ({ books, removeBook }) => {
   const rowHead = ['ID', 'Title', 'Category'];
   return (
     <div>
+      <CategoryFilter />
       <table>
         <thead>
           <tr>
