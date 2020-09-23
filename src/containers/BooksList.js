@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import uuid from 'react-uuid';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
 
@@ -18,20 +17,10 @@ const BookList = ({
     const category = e.target.value;
     filterBook(category);
   };
-  const rowHead = ['ID', 'Title', 'Category'];
   return (
     <div>
       <CategoryFilter handleFilterChange={handleFilterChange} />
       <table>
-        <thead>
-          <tr>
-            {
-         rowHead.map(heading => (
-           <th key={uuid()}>{heading}</th>
-         ))
-}
-          </tr>
-        </thead>
         <tbody>
           {
           books.filter(book => (filter === 'All' ? books : book.category === filter))
