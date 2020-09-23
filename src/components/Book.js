@@ -22,7 +22,6 @@ const Book = ({ book, handleRemoveBook }) => (
       </div>
     </div>
     <div className="books_completed">
-      {/* <RadioButtonUncheckedIcon className="Oval-2" /> */}
       <div className="Oval-2" />
       <div className="percentage">
         <span>94%</span>

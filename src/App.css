@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 .Bookstore-CMS {
   background-color: #f5f6fa;
@@ -26,6 +27,10 @@
 .navbar {
   display: flex;
   align-items: center;
+}
+
+.nav-item {
+  cursor: pointer;
 }
 
 .nav_category {
@@ -63,56 +68,58 @@
   align-items: center;
   padding-left: 1.5em;
   padding-right: 1.5em;
-    width: 1100px;
-    height: 150px;
-    border-radius: 4px;
-    border: solid 1px #e8e8e8;
-    background-color: #ffffff;
-    margin: 20px 80px;
+  width: 1100px;
+  height: 150px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  margin: 20px 80px;
 }
 
 .table-book-info {
   display: flex;
   flex-direction: column;
 }
+
 .table-book-category {
-    width: 49px;
-    height: 18px;
-    opacity: 0.5;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #121212;
+  width: 49px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
 
 .table-book-title {
-    width: 197px;
-    height: 29px;
-    font-family: RobotoSlab;
-    font-size: 22px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.2px;
-    color: var(--black-three);
+  width: 197px;
+  height: 29px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--black-three);
 }
 
-.table-book-id, .table-book-options {
+.table-book-id,
+.table-book-options {
   width: 107px;
   height: 19px;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #4386bf
+  color: #4386bf;
 }
 
 .table-book-options {
@@ -121,9 +128,9 @@
 }
 
 .table-book-options button {
-border: none;
-background: transparent;
-color: #4386bf;
+  border: none;
+  background: transparent;
+  color: #4386bf;
 }
 
 .span-element {
@@ -131,7 +138,7 @@ color: #4386bf;
 }
 
 .books_completed {
-  display: flex; 
+  display: flex;
   align-items: center;
 }
 
@@ -146,15 +153,15 @@ color: #4386bf;
 }
 
 .Oval-2 {
-  background-color:#fff;
-  border:5px solid; 
-  border-color: rgb(238, 232, 232) #307bbe#307bbe #307bbe;   
-  height:60px;
-  border-radius:50%;
-  -moz-border-radius:50%;
-  -webkit-border-radius:50%;
-  width:60px;
-  margin-right: .6em;
+  background-color: #fff;
+  border: 5px solid;
+  border-color: rgb(238, 232, 232) #307bbe#307bbe #307bbe;
+  height: 60px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 60px;
+  margin-right: 0.6em;
 }
 
 .percentage span:first-child {
@@ -164,15 +171,15 @@ color: #4386bf;
 
 .percentage span:last-child {
   font-size: 14px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .book-progress-chapter {
   width: 126px;
   height: 18px;
   opacity: 0.5;
-  font-family: RobotoSlab;
-  font-size: 13px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 10px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -182,16 +189,16 @@ color: #4386bf;
 }
 
 .book-progress-title {
-    width: 75px;
-    height: 21px;
-    font-family: RobotoSlab;
-    font-size: 16px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.4px;
-    color: #121212;
+  width: 75px;
+  height: 21px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
 }
 
 .book-progress-button {
@@ -202,45 +209,43 @@ color: #4386bf;
   background-color: #0290ff;
   margin-top: 20px;
   border-radius: 3px;
-  letter-spacing: .5px;
-  font-family: "Roboto Slab",serif;
+  letter-spacing: 0.5px;
+  font-family: "Roboto Slab", serif;
 }
 
 .form_element {
   padding-left: 9em;
   padding-right: 2em;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 
 .form_title {
-  font-family: "Montserrat",sans-serif;
-    color: #888;
-    font-size: 22px;
-    font-weight: 700;
-    display: flex;
-   margin-left: 4rem;
-   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #888;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  margin-left: 4rem;
+  text-transform: uppercase;
 }
-
 
 .form_input {
   width: 500px;
   height: 45px;
-  border: none;
   border-radius: 4px;
-  border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
 }
 
-.form_category{
-    width: 285px;
-    height: 45px;
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: .5em;
-    border-radius: 4px;
-    border: solid 1px #e8e8e8;
-    background-color: #ffffff;
+.form_category {
+  width: 285px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 0.5em;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
 }
 
 .form_button {
@@ -252,4 +257,13 @@ color: #4386bf;
   border: none;
   border-radius: 3px;
   background-color: #0290ff;
+}
+
+.text-center {
+  text-align: center;
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
